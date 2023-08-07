@@ -21,7 +21,7 @@
                         <p class="mb-5"><i>THE BIGGEST TECH EVENT IN OWERRI IS BACK</i></p>
                         <p class="fs-5 mb-5">
                             <i class="bi bi-calendar3 myicon"></i>
-                            August 15-17,2023
+                            August 21-23,2023
                         </p>
                         <p class="fs-5 mb-5">
                             <i class="bi bi-geo-alt-fill myicon"></i>
@@ -93,6 +93,106 @@
                 </div>
             </div>
         </section>
+        <section class="py-5">
+            <div class="container-fluid">
+                <div class="row g-4 px-sm-5 text-center">
+                    <div class="col-md-3">
+                        <p><span class="display-1 fw-bold color1">20 </span><br class="d-none d-md-block"><span>Skilled Speakers</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span class="display-1 fw-bold color1">15+ </span><br class="d-none d-md-block"><span>Workshops</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span class="display-1 fw-bold color1">500+ </span><br class="d-none d-md-block"><span>Event Participants</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span class="display-1 fw-bold color1">3 </span><br class="d-none d-md-block"><span>Days Full of Inspiration</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg2 py-5">
+            <div class="container-fluid py-5 text-center">
+                <h1>MEET US ON <span class="color1"><i>AUGUST 21, 2023</i></span></h1>
+                <div class="row pt-5">
+                    <div class="col">
+                        <p class="display-1 fw-bold mb-0 day"></p>
+                        <p >DAYS</p>
+                    </div>
+                    <div class="col">
+                        <p class="display-1 fw-bold mb-0 hour"></p>
+                        <p>HOURS</p>
+                    </div>
+                    <div class="col">
+                        <p class="display-1 fw-bold mb-0 min"></p>
+                        <p>MINS</p>
+                    </div>
+                    <div class="col">
+                        <p class="display-1 fw-bold mb-0 sec"></p>
+                        <p>SECS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 px-sm-5">
+            <div class="container-fluid px-sm-5 px-4">
+                <h1 class="fw-bold">PROGRAM</h1>
+                <p class="fs-4">This Conference is scheduled to run through all 3 days from 21 - 23 August, 2023. </p>
+                <p class="fs-4">We will provide free lunch and coffee break in each day.</p>
+                <a href="/program" class="btn btn-success btn-lg">View Full Schedule</a>
+            </div>
+        </section>
+        <section class="bg3 py-5 ">
+            <div class="container-fluid text-center py-5 px-3">
+                <h1>AN EASY TO LOCATE VENUE</h1>
+                <p class="fs-3">
+                    <i class="bi bi-geo-alt-fill color1"></i>
+                    SMAT Auditorium, FUTO, Owerri
+                </p>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5188.734037448581!2d6.985909037403602!3d5.381128240189208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425dd14ea515f3%3A0x52d4f92302280619!2sSMAT%20Auditorium%20II!5e0!3m2!1sen!2sng!4v1691407970261!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+
+            </div>
+        </section>
+        <section class="py-5 px-sm-5">
+            <div class="container-fluid text-center px-sm-5 py-5 px-3">
+                <h1 class="mb-4">WE BRING TOGETHER <span class="color1">TOP TECH EXPERTS</span> & <span class="color1"> EXPEREINCED TECHNOLOGISTS</span> TO DISCUSS THE FUTURE OF TECH IN AFRICA. </h1>
+                <button class="btn btn-success text-light btn-lg px-3 py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Register Now</button>
+            </div>
+        </section>
     </main>
+    <%- include('partials/footer') %>
 </body>
+<script>
+    const eventDay = new Date('08/21/2023')
+
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    let dayfield = document.querySelector('.day')
+    let hourfield = document.querySelector('.hour')
+    let minutefield = document.querySelector('.min')
+    let secondfield = document.querySelector('.sec')
+
+    function countdown(){
+        let now = new Date();
+        let timeSpan = eventDay - now
+        let days = Math.floor(timeSpan / day);
+        let hours = Math.floor((timeSpan % day) / hour);
+        let minutes = Math.floor((timeSpan % hour) / minute);
+        let seconds = Math.floor((timeSpan % minute) / second);
+  
+        // Set results
+        dayfield.innerHTML = days;
+        hourfield.innerHTML = hours;
+        minutefield.innerHTML = minutes;
+        secondfield.innerHTML = seconds;
+    }
+
+    let interval = setInterval(countdown, 1000)
+
+</script>
 </html>
