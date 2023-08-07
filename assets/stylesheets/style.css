@@ -101,4 +101,36 @@ footer{
     }
 }
 
+.about-title{
+    display: inline-block;
+    background-color: #00663354;
+    border-radius: 5px;
+}
+
+.team{
+    background-image: linear-gradient(180deg, rgb(23, 24, 26), rgba(23, 24, 26, 0.562), rgba(23, 24, 26, 0.479), rgb(23, 24, 26)),url('/assets/images/IMG_4831.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-size{
+    width: 20rem;
+}
+
+.speakers{
+    background-image: linear-gradient(180deg, rgb(23, 24, 26), rgba(14, 14, 15, 0.178), rgba(23, 24, 26, 0.089), rgb(23, 24, 26)),url('/assets/images/IMG_4868.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.accordion{
+    --bs-accordion-color: white;
+    --bs-accordion-bg: rgb(23, 24, 26);
+    /* --bs-accordion-active-color: rgba(54, 84, 145, 0.966); */
+    --bs-accordion-active-bg: rgb(75, 75, 80);
+    --bs-accordion-btn-focus-border-color: rgb(75, 75, 80);
+    --bs-accordion-btn-focus-box-shadow: rgb(75, 75, 80);
+    --bs-accordion-btn-color:  rgb(0, 199, 149);   
+
+}
 

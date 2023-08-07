@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechXFest Program Schedule</title>
+    <%- include('partials/headlinks') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main>
+        
+        <section class="py-5">
+            <div class="container-fluid pt-5">
+                <div class="text-center">
+                    <h1 class="color1 about-title p-2" >Program Schedule</h1>
+                </div>
+                <div class="container-fluid pt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="color1 fw-bold fs-4">Day 1: Innovation Ignited</span>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fs-5 fw-bold">
+                                    8:00 AM - 9:00 AM: Registration and Welcome Breakfast <br>
+                                    9:00 AM - 9:30 AM: Opening Ceremony: Embracing the Technological Frontier <br>
+                                    9:30 AM - 10:30 AM: Keynote Address: "Innovating for a Better Tomorrow" by Dr. Jane Ramirez <br>
+                                    10:45 AM - 11:45 AM: Panel Discussion: "Disruptive Technologies: Reshaping Industries" <br>
+                                    12:00 PM - 1:30 PM: Lunch and Technology Showcase <br>
+                                    1:45 PM - 3:00 PM: Parallel Workshops: <br>
+                                    "AI and Ethics: Navigating the Moral Landscape" <br>
+                                    "IoT Revolution: Connecting the Unconnected" <br>
+                                    3:00 PM - 6:00 PM: Networking Reception: Unwind and Connect <br>
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="color1 fw-bold fs-4">Day 2: Learning Labs and Exploration</span>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               <p class="fs-5 fw-bold">
+                                8:30 AM - 9:30 AM: Breakfast and Morning Energizer: Mindful Tech Yoga <br>
+                                9:45 AM - 12:00 AM: Workshop Series A: <br>
+                                "Blockchain Beyond Cryptocurrencies: Real-World Applications" <br>
+                                "Design Thinking for User-Centered Innovation" <br>
+                                12:30 PM - 2:00 PM: Networking Luncheon and Technology Showcase <br>
+                                2:15 PM - 3:30 PM: Workshop Series B: <br>
+                                "Cybersecurity: Safeguarding the Digital Frontier" <br>
+                                "AR & VR: Immersive Experiences Redefined" <br>
+                                3:30 PM - 6:00 PM: Evening Social Event: Tech Trivia Night <br>
+                               </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="color1 fw-bold fs-4">Day 3: Visionary Insights and Beyond</span>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               <p class="fs-5 fw-bold">
+                                8:00 AM - 9:00 AM: Breakfast and Morning Networking <br>
+                                9:15 AM - 10:15 AM: Keynote Address: "From Lab to Market: Innovations That Changed the Game" by Dr. David Lee <br>
+                                10:30 AM - 11:30 AM: Fireside Chat: "Sustainability and Tech: Greening the Digital Revolution" with Sarah Martinez <br>
+                                11:45 AM - 1:15 PM: Lunch, Technology Showcase, and Poster Presentations <br>
+                                1:30 PM - 3:00 PM: Panel Discussion: "Ethical AI: Balancing Innovation and Responsibility" <br>
+                                3:15 PM - 4:15 PM: Closing Keynote: "The Next Decade of Tech" by Dr. Richard Parker <br>
+                                4:15 PM - 6:00 PM: Farewell Dinner and Networking Soiree <br>
+                               </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="container-fluid py-5 speakers">
+                <div class="text-center">
+                    <h1 class="color1 about-title p-2" >Keynote Speakers</h1>
+                </div>
+                <div class="swiper text-center">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/team.png" alt="" class="img-fluid img-size">
+                            <p class="fw-bold mb-0 fs-3">Member1</p>
+                            <p class="fs-5">Role1</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+    
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        speed: 400,
+        spaceBetween: 100,
+        autoplay: {
+            delay: 1000,
+        },
+        slidesPerView: 2,
+        spaceBetween: 30,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+            },
+            // when window width is >= 640px
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 40
+            },
+            992: {
+            slidesPerView: 4,
+            spaceBetween: 40
+            }
+        }
+    });
+</script>
+</html>
