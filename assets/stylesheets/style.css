@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Comfortaa';
+    max-width: 100%;
+    background-color:#17181a;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-custom{
+    background-color: rgba(23, 24, 26, 0.336);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.custom-toggler .navbar-toggler-icon{
+    /* background-color: #42c2ff; */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 199, 149)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler{
+    border: 0px;
+    color: rgba(23, 24, 26, 0.651);
+}
+
+.hero{
+    background-image: linear-gradient(rgb(23, 24, 26), rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.527), rgb(14, 14, 15) ), url('/assets/images/IMG_4864.JPG');
+    height: 100dvh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.color1{
+    color: rgb(0, 199, 149);
+}
+
+.myicon{
+    background-color: rgba(0, 199, 149, 0.767);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.bg1{
+    /* background-color: #0b0c0c; */
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#0e0e0f), to(#17181a)),url('/assets/images/IMG_4869.PNG'); */
+    background-image: linear-gradient(180deg, rgb(14, 14, 15), rgba(23, 24, 26, 0)),url('/assets/images/IMG_4869.PNG');
+    background-position: right;
+    background-size: cover;
+}
+
+.myicon1{
+    font-size: 10rem;
+}
+
+.waitlist-modal{
+    background-color: #17181a;
+}
+
