@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom align-middle px-sm-5  px-2 m-0" >
     <div class="container-fluid m-0 p-0 pe-lg-5">
         <a class="navbar-brand p-2 py-0 " href="/">
-          <img src="/assets/images/logo3.png" alt="logo" class="nav_logo" width="177" height="51" >
+          <img src="/assets/images/logo.png" alt="logo" class="nav_logo img-fluid" width="177" height="51" >
         </a>
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,19 +32,19 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body waitlist-modal">
-          <div class="success"><h2 class="text-light fw-bold text-center">You have successfully registered!!</h2></div>
+          <div class="success"><h2 class="fw-bold text-center color1">You have successfully registered!!</h2></div>
           <form id="form">
               <div class="mb-3">
                   <label for="FormControlInput1" class="form-label name color1 fw-bold" >Name</label>
-                  <input type="text" class="form-control" id="FormControlInput1" placeholder="Please input your name" name="name" required>
+                  <input type="text" class="form-control" id="FormControlInput1" placeholder="Please input your Fullname" name="name" required>
                 </div>
               <div class="mb-3">
                   <label for="FormControlInput2" class="form-label email color1 fw-bold">Email address</label>
                   <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com" name="email" required>
               </div>
               <div class="mb-3">
-                  <label for="exampleFormControlInput3" class="form-label phone color1 fw-bold">Location</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="What city are you located in?" name="city" required>
+                  <label for="FormControlInput4" class="form-label color1 fw-bold">Phone Number</label>
+                  <input type="tel" class="form-control" id="FormControlInput4" placeholder="+23400000000" name="phone" required>
               </div>
               <div class="mb-3">
                   <label for="select" class="form-label color1 fw-bold">Gender</label>
@@ -52,9 +52,19 @@
                       <option selected>Choose your Gender</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
-                      <option value="female">Rather not say</option>
                   </select>
                   <p class="roleError text-danger fw-sembold ps-2 mt-1">Please Select your Gender</p>
+              </div>
+              <div class="mb-3">
+                  <label for="select1" class="form-label color1 fw-bold">Attendee Category</label>
+                  <select class="form-select category" aria-label="Default select1 example" id="select1" name="category">
+                      <option selected>Choose your Category</option>
+                      <option value="Geneal Attendee">General Attendee</option>
+                      <option value="student">Student</option>
+                      <option value="speaker">Speaker</option>
+                      <option value="Exhibitor">Exhibitor</option>
+                  </select>
+                  <p class="roleError1 text-danger fw-sembold ps-2 mt-1">Please Select your Category</p>
               </div>
               
 
@@ -69,18 +79,26 @@
 <script>
   const form = document.getElementById('form');
   let genderError = document.querySelector('.roleError')
+  let categoryError = document.querySelector('.roleError1')
   let success = document.querySelector('.success')
   genderError.style.display = 'none'
+  categoryError.style.display = 'none'
   success.style.display = 'none'
 
   form.addEventListener('submit', (e)=>{
       e.preventDefault()
       let gender = document.querySelector('.gender').value
+      let category = document.querySelector('.category').value
       // console.log(role)
       if (gender == 'Choose your Gender'){
           genderError.style.display = 'block'
-      } else{
+          categoryError.style.display = 'none'
+      } else if(category == 'Choose your Category'){
+          categoryError.style.display = 'block'
           genderError.style.display = 'none'
+      }else{
+          genderError.style.display = 'none'
+          categoryError.style.display = 'none'
           const formData = new FormData(form);
           const payload = new URLSearchParams(formData);
 
