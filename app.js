@@ -91,6 +91,7 @@ app.post('/adminregister', async(req,res)=>{
                   password: hashedPassword
               })
               await admin.save()
+              req.flash('success', 'Admin Account created successfully, Please Log In')
               res.redirect('/admin')
           }
           catch (err) {

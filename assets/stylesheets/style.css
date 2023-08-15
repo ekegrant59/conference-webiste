@@ -7,7 +7,6 @@ html{
 }
 
 body{
-    font-family: 'Comfortaa';
     max-width: 100%;
     background-color:rgb(23, 24, 26);
     color: white;
@@ -73,6 +72,12 @@ body{
 
 .bg3{
     background-image: linear-gradient(180deg, rgb(23, 24, 26), rgba(23, 24, 26, 0), rgba(23, 24, 26, 0), rgb(23, 24, 26)),url('/assets/images/IMG_4842.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.sponsor{
+    background-image: linear-gradient(180deg, rgb(23, 24, 26), rgba(238, 240, 245, 0.24), rgba(217, 220, 226, 0.253) , rgb(23, 24, 26)), url(/assets/images/IMG_4843.JPG);
     background-position: center;
     background-size: cover;
 }
